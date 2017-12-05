@@ -10,4 +10,5 @@ USER root
 # Install Util
 RUN apt-get update && apt-get install -y stress telnet net-tools procps tcpdump
 
+EXPOSE 8080
 CMD ["catalina.sh", "run"]
